@@ -11864,38 +11864,21 @@ nav .btn {
   margin-right: 0.5rem;
 }
 
-.bg-home {
-  background-image: url(/assets/images/fond_home.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.main-home {
+  background-color: #91BDFF;
 }
-
-body a,
-body p {
-  color: #ffffff;
-}
-
-.main-home h1, .main-home .h1,
-.error404 h1,
-.error404 .h1 {
+.main-home h1, .main-home .h1 {
   font-size: 50px;
   padding: 300px 0 20px 100px;
   color: #ffffff;
 }
-.main-home svg,
-.error404 svg {
+.main-home svg {
   width: 1.2%;
   fill: #ffffff;
 }
-.main-home p,
-.error404 p {
+.main-home p {
   padding-left: 150px;
 }
-.main-home .link-main-home,
-.error404 .link-main-home {
+.main-home .link-main-home {
   padding: 30px 0 0 140px;
 }/*# sourceMappingURL=main.css.map */

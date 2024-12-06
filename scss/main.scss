@@ -26,22 +26,8 @@ nav {
 
 }
 
-.bg-home {
-    background-image: url(/assets/images/fond_home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-a,
-p {
-    color: $white;
-}
-
 .main-home {
+    background-color: $secondary;
     h1 {
         font-size: 50px;
         padding: 300px 0 20px 100px;
@@ -62,23 +48,3 @@ p {
         padding: 30px 0 0 140px;
     }
 }
-
-.container404 {
-    h1 {
-        font-size: 50px;
-        padding: 300px 0 20px 100px;
-        color: $white;
-    }
-
-    p {
-        padding-left: 150px;
-
-    }
-
-    .btn {
-        padding: 30px 0 0 140px;
-    }
-
-    img {
-        width: 25%;
-    }
