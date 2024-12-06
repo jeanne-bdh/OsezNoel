@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
 
     <title>Osez Noël</title>
@@ -15,67 +14,48 @@
 
     <header>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img id="logo" src="/assets/images/logo_Xtree.png"
-                        alt="logo arbre de Noel"></a>
-                <h1>Osez Noël</h1>
+                <a class="navbar-brand" href="/"><img src="/assets/images/logo_Xtree.png" alt="logo arbre de Noel">Osez
+                    Noël</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse d-flex justify-content-end flex-nowrap" id="navbarNav">
+                    <ul class="navbar-nav d-flex align-items-center gap-4">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="/">Accueil</a>
+                            <a class="nav-link" href="/">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Créer un calendrier</a>
+                            <a class="nav-link" href="#">Créer un calendrier</a>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-outline-primary text-white me-2">S'inscrire</button>
+                            <a href="#"><button type="button" class="btn btn-outline-light">S'inscrire</button></a>
                         </li>
                         <li class="nav-item">
-                            <button type="button" class="btn btn-login text-white">Se connecter</button>
+                            <a href="#"><button type="button" class="btn btn-primary">Se
+                                    connecter</button></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <div class="container">
-            <div
-                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-
-                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                    <li><a href="/" class="nav-link px-2 link-secondary">Accueil</a></li>
-                    <li><a href="#" class="nav-link px-2">Créer un calendrier</a></li>
-                </ul>
-
-                <div class="col-md-3 text-end">
-                    <button type="button" class="btn btn-outline-primary me-2">S'inscrire</button>
-                    <button type="button" class="btn btn-primary">Se connecter</button>
-                </div>
-            </div>
-        </div>
-
     </header>
 
-    <main id="main-page">
-        <!-- Le contenu de ma page sera injecté ici -->
+    <div class="bg-home">
+        <main id="main-page">
+            <!-- Le contenu de ma page sera injecté ici -->
+        </main>
 
-        <img src="/assets/images/fond_home.jpg" alt="Fond bleu page d'accueil">
-    </main>
-
-    <!-- FOOTER -->
-    <div class="container">
-        <footer class="py-3 my-4">
-            <p class="text-center text-body-secondary">&copy; 2025 Osez Noël - Tous droits réservés - <a
-                    href="mentions_legales">Mentions légales</a></p>
+        <footer class="container py-3">
+            <hr class="w-75 mx-auto text-white border-2 rounded-5">
+            <p class="text-center">&copy; 2024 Osez Noël - Tous droits réservés - <a href="#">Mentions légales</a></p>
         </footer>
     </div>
 
     <script type="module" src="Router/Router.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html >
+
+</html>
