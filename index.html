@@ -16,28 +16,32 @@
         <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="/assets/images/logo_Xtree.png" alt="logo arbre de Noel">Osez
-                    Noël</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end flex-nowrap" id="navbarNav">
-                    <ul class="navbar-nav d-flex align-items-center gap-4">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Créer un calendrier</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#"><button type="button" class="btn btn-outline-light">S'inscrire</button></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#"><button type="button" class="btn btn-primary">Se
-                                    connecter</button></a>
-                        </li>
-                    </ul>
+                <div class="d-flex align-items-center">
+                    <a class="navbar-brand me-5" href="/"><img src="/assets/images/logo_Xtree.png" alt="logo arbre de Noel">Osez
+                        Noël</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-end flex-nowrap">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav d-flex align-items-center gap-4">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="/">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white text-nowrap" href="/createCalendar">Créer un calendrier</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/register" type="button" class="btn btn-outline-light">S'inscrire</button></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/login"><button type="button" class="btn btn-primary text-white text-nowrap">Se
+                                        connecter</button></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -50,7 +54,8 @@
 
         <footer class="container py-3">
             <hr class="w-75 mx-auto text-white border-2 rounded-5">
-            <p class="text-center">&copy; 2024 Osez Noël - Tous droits réservés - <a href="#">Mentions légales</a></p>
+            <p class="text-center">&copy; 2024 Osez Noël - Tous droits réservés - <a href="/legacy">Mentions légales</a>
+            </p>
         </footer>
     </div>
 

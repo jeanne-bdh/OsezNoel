@@ -2,28 +2,21 @@
 @import 'custom';
 
 nav {
+    .container-fluid {
+        @media (max-width: 992px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     img {
-        width: 10%;
+        width: 4rem;
     }
 
     .navbar-brand {
         font-family: $font-family-display;
         font-size: 40px;
-        color: $white;
     }
-
-    .nav-link {
-        color: $white;
-        white-space: nowrap;
-        margin-right: 0.5rem;
-    }
-
-    .btn {
-        color: $white;
-        white-space: nowrap;
-        margin-right: 0.5rem;
-    }
-
 }
 
 .bg-home {
@@ -45,13 +38,13 @@ body {
 
 }
 
-.main-home {
-    h1 {
-        font-size: 50px;
-        padding: 300px 0 20px 100px;
-        color: $white;
-    }
+h1 {
+    font-size: 50px;
+    padding: 300px 0 20px 100px;
+    color: $white;
+}
 
+.main-home {
     svg {
         width: 1.2%;
         fill: $white;
@@ -65,4 +58,33 @@ body {
     .link-main-home {
         padding: 30px 0 0 140px;
     }
+}
+
+.container-form-style {
+    background-color: #BDD8FF;
+    border-radius: 10px;
+    border: 1px solid $dark;
+    padding: 40px;
+    margin: auto;
+    margin-top: 200px;
+    width: 85%;
+
+    form {
+        width: 100%;
+    }
+
+    label {
+        color: $black;
+        white-space: nowrap;
+    }
+
+    @media (min-width: 768px) {
+        padding: 50px;
+        width: 100%;
+    }
+}
+
+h4 {
+    color: $black;
+    text-align: center;
 }

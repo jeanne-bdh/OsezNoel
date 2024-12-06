@@ -11845,23 +11845,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (max-width: 992px) {
+  nav .container-fluid, nav .container-sm, nav .container-md, nav .container-lg, nav .container-xl, nav .container-xxl {
+    display: flex;
+    flex-direction: column;
+  }
+}
 nav img {
-  width: 10%;
+  width: 4rem;
 }
 nav .navbar-brand {
   font-family: "Great Vibes", sans-serif;
   font-size: 40px;
-  color: #ffffff;
-}
-nav .nav-link {
-  color: #ffffff;
-  white-space: nowrap;
-  margin-right: 0.5rem;
-}
-nav .btn {
-  color: #ffffff;
-  white-space: nowrap;
-  margin-right: 0.5rem;
 }
 
 .bg-home {
@@ -11879,11 +11874,12 @@ body p {
   color: #ffffff;
 }
 
-.main-home h1, .main-home .h1 {
+h1, .h1 {
   font-size: 50px;
   padding: 300px 0 20px 100px;
   color: #ffffff;
 }
+
 .main-home svg {
   width: 1.2%;
   fill: #ffffff;
@@ -11893,4 +11889,32 @@ body p {
 }
 .main-home .link-main-home {
   padding: 30px 0 0 140px;
+}
+
+.container-form-style {
+  background-color: #BDD8FF;
+  border-radius: 10px;
+  border: 1px solid #0E3063;
+  padding: 40px;
+  margin: auto;
+  margin-top: 200px;
+  width: 85%;
+}
+.container-form-style form {
+  width: 100%;
+}
+.container-form-style label {
+  color: #43291F;
+  white-space: nowrap;
+}
+@media (min-width: 768px) {
+  .container-form-style {
+    padding: 50px;
+    width: 100%;
+  }
+}
+
+h4, .h4 {
+  color: #43291F;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
