@@ -36,13 +36,9 @@ nav {
     justify-content: space-between;
 }
 
-body {
-
-    a,
-    p {
-        color: $white;
-    }
-
+a,
+p {
+    color: $white;
 }
 
 .main-home {
@@ -66,3 +62,23 @@ body {
         padding: 30px 0 0 140px;
     }
 }
+
+.container404 {
+    h1 {
+        font-size: 50px;
+        padding: 300px 0 20px 100px;
+        color: $white;
+    }
+
+    p {
+        padding-left: 150px;
+
+    }
+
+    .btn {
+        padding: 30px 0 0 140px;
+    }
+
+    img {
+        width: 25%;
+    }

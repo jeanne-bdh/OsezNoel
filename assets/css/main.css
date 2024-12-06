@@ -11879,18 +11879,23 @@ body p {
   color: #ffffff;
 }
 
-.main-home h1, .main-home .h1 {
+.main-home h1, .main-home .h1,
+.error404 h1,
+.error404 .h1 {
   font-size: 50px;
   padding: 300px 0 20px 100px;
   color: #ffffff;
 }
-.main-home svg {
+.main-home svg,
+.error404 svg {
   width: 1.2%;
   fill: #ffffff;
 }
-.main-home p {
+.main-home p,
+.error404 p {
   padding-left: 150px;
 }
-.main-home .link-main-home {
+.main-home .link-main-home,
+.error404 .link-main-home {
   padding: 30px 0 0 140px;
 }/*# sourceMappingURL=main.css.map */
