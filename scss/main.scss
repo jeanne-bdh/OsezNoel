@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'custom';
 
+// NAVBAR
 nav {
     .container-fluid {
         @media (max-width: 992px) {
@@ -19,16 +20,18 @@ nav {
     }
 }
 
+//
 .bg-home {
     background-image: url(/assets/images/fond_home.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 90vh;
+    height: calc(100vh - 90px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
+//
 body {
 
     a,
@@ -38,12 +41,14 @@ body {
 
 }
 
+//
 h1 {
     font-size: 50px;
     padding: 300px 0 20px 100px;
     color: $white;
 }
 
+//
 .main-home {
     svg {
         width: 1.2%;
@@ -60,31 +65,18 @@ h1 {
     }
 }
 
+// LOGIN
 .container-form-style {
-    background-color: #BDD8FF;
+    background-color: #749ec1;
     border-radius: 10px;
-    border: 1px solid $dark;
+    border: 1.5px solid $dark;
     padding: 40px;
-    margin: auto;
-    margin-top: 200px;
-    width: 85%;
-
-    form {
-        width: 100%;
-    }
-
-    label {
-        color: $black;
-        white-space: nowrap;
-    }
+    margin-top: 70px;
+    width: 80%;
 
     @media (min-width: 768px) {
         padding: 50px;
-        width: 100%;
+        margin-top: 200px;
     }
 }
 
-h4 {
-    color: $black;
-    text-align: center;
-}

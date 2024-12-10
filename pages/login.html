@@ -1,34 +1,14 @@
-<section class="container container-form-style d-flex flex-column justify-content-center align-items-center w-75">
-    <div>
-        <h4>CONNEXION</h4>
-
-        <form action="/pages/auth/loginPost.php" method="POST">
-            <div class="row my-5">
-                <label for="idInputCo" class="col-sm-2 col-form-label">Identifiant :</label>
-                <div class="col-sm-10">
-                    <input type="text" name="idCo" class="form-control" id="idInputCo" required>
-                    <div class="invalid-feedback">
-                        Veuillez entrer une adresse e-mail valide.
-                    </div>
-                </div>
-            </div>
-            <div class="row my-5">
-                <label for="passwordInputCo" class="col-sm-2 col-form-label">Mot de passe :</label>
-                <div class="col-sm-10">
-                    <input type="password" name="password" class="form-control" id="passwordInputCo" required>
-                    <div class="invalid-feedback">
-                        Le mot de passe doit contenir au moins 8 caractères comprenant une lettre majuscule, une
-                        minuscule, un chiffre et un caractère
-                        spécial.
-                    </div>
-                    <div class="valid-feedback">
-                        Le mot de passe est valide.
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary text-white" id="btn-validCo">Se connecter</button>
-            </div>
-        </form>
-    </div>
+<section class="container container-form-style">
+    <h4 class="text-black text-center mb-4">CONNEXION</h4>
+    <form class="d-flex flex-column align-items-center">
+        <div class="mb-3">
+            <label for="idInputCo" class="form-label text-black">Identifiant :</label>
+            <input type="text" class="form-control" id="idInputCo">
+        </div>
+        <div class="mb-3">
+            <label for="idInputPassword" class="form-label text-black">Mot de passe :</label>
+            <input type="password" class="form-control" id="idInputPassword">
+        </div>
+        <button type="submit" class="btn btn-dark text-white">Se connecter</button>
+    </form>
 </section>

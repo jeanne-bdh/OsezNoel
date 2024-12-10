@@ -11863,7 +11863,7 @@ nav .navbar-brand {
   background-image: url(/assets/images/fond_home.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: calc(100vh - 90px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11892,29 +11892,16 @@ h1, .h1 {
 }
 
 .container-form-style {
-  background-color: #BDD8FF;
+  background-color: #749ec1;
   border-radius: 10px;
-  border: 1px solid #0E3063;
+  border: 1.5px solid #0E3063;
   padding: 40px;
-  margin: auto;
-  margin-top: 200px;
-  width: 85%;
-}
-.container-form-style form {
-  width: 100%;
-}
-.container-form-style label {
-  color: #43291F;
-  white-space: nowrap;
+  margin-top: 70px;
+  width: 80%;
 }
 @media (min-width: 768px) {
   .container-form-style {
     padding: 50px;
-    width: 100%;
+    margin-top: 200px;
   }
-}
-
-h4, .h4 {
-  color: #43291F;
-  text-align: center;
 }/*# sourceMappingURL=main.css.map */
