@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'custom';
 
+body {
+    a {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
 // NAVBAR
 nav {
-    .container-fluid {
-        @media (max-width: 992px) {
-            display: flex;
-            flex-direction: column;
-        }
-    }
 
     img {
         width: 4rem;
@@ -18,9 +22,94 @@ nav {
         font-family: $font-family-display;
         font-size: 40px;
     }
+
+    .nav-link {
+        color: $white;
+        white-space: nowrap;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+    }
 }
 
-//
+// MAIN HOME
+.main-home {
+
+    h1 {
+        font-size: 50px;
+        padding: 300px 0 20px 100px;
+    }
+
+    svg {
+        width: 4%;
+        fill: $white;
+    }
+
+    p {
+        padding-left: 150px;
+    }
+
+    .link-main-home {
+        padding: 30px 0 30px 140px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .link-example {
+            padding-left: 3rem;
+            margin-left: 3rem;
+        }
+    }
+
+    @media (max-width : 768px) {
+        h1 {
+            font-size: 1.5rem;
+            padding: 100px 0 20px 20px;
+        }
+
+        svg {
+            width: 4%;
+            fill: $white;
+        }
+
+        p {
+            font-size: 0.8rem;
+            padding-left: 25px;
+
+        }
+
+        picture {
+            img {
+                width: 5%;
+            }
+        }
+
+        .link-main-home {
+            padding: 100px 0 0px 20px;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                padding-bottom: 30px;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+
+            .link-example {
+                padding-left: 0;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// BACKGROUND HOME
 .bg-home {
     background-image: url(/assets/images/fond_home.jpg);
     background-size: cover;
@@ -29,39 +118,14 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
 
-//
-body {
-
-    a,
-    p {
-        color: $white;
-    }
-
-}
-
-//
-h1 {
-    font-size: 50px;
-    padding: 300px 0 20px 100px;
-    color: $white;
-}
-
-//
-.main-home {
-    svg {
-        width: 1.2%;
-        fill: $white;
-    }
-
-    p {
-        padding-left: 150px;
-
-    }
-
-    .link-main-home {
-        padding: 30px 0 0 140px;
+    @media (max-width : 768px) {
+        background-image: url(/assets/images/fond_home.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 100vw;
+        height: 100vh;
     }
 }
 
@@ -80,3 +144,16 @@ h1 {
     }
 }
 
+// FOOTER
+
+footer {
+    @media (max-width: 768px) {
+        p {
+            font-size: 0.7rem;
+        }
+
+        a {
+            font-size: 0.7rem;
+        }
+    }
+}

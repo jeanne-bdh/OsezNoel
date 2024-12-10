@@ -11845,18 +11845,83 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@media (max-width: 992px) {
-  nav .container-fluid, nav .container-sm, nav .container-md, nav .container-lg, nav .container-xl, nav .container-xxl {
-    display: flex;
-    flex-direction: column;
-  }
+body a {
+  color: #ffffff;
 }
+body p {
+  color: #ffffff;
+}
+
 nav img {
   width: 4rem;
 }
 nav .navbar-brand {
   font-family: "Great Vibes", sans-serif;
   font-size: 40px;
+}
+nav .nav-link {
+  color: #ffffff;
+  white-space: nowrap;
+}
+nav .navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+}
+
+.main-home h1, .main-home .h1 {
+  font-size: 50px;
+  padding: 300px 0 20px 100px;
+}
+.main-home svg {
+  width: 4%;
+  fill: #ffffff;
+}
+.main-home p {
+  padding-left: 150px;
+}
+.main-home .link-main-home {
+  padding: 30px 0 30px 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-home .link-main-home .link-example {
+  padding-left: 3rem;
+  margin-left: 3rem;
+}
+@media (max-width: 768px) {
+  .main-home h1, .main-home .h1 {
+    font-size: 1.5rem;
+    padding: 100px 0 20px 20px;
+  }
+  .main-home svg {
+    width: 4%;
+    fill: #ffffff;
+  }
+  .main-home p {
+    font-size: 0.8rem;
+    padding-left: 25px;
+  }
+  .main-home picture img {
+    width: 5%;
+  }
+  .main-home .link-main-home {
+    padding: 100px 0 0px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-home .link-main-home a {
+    padding-bottom: 30px;
+  }
+  .main-home .link-main-home button {
+    font-size: 0.9rem;
+  }
+  .main-home .link-main-home .link-example {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
 }
 
 .bg-home {
@@ -11868,27 +11933,15 @@ nav .navbar-brand {
   flex-direction: column;
   justify-content: space-between;
 }
-
-body a,
-body p {
-  color: #ffffff;
-}
-
-h1, .h1 {
-  font-size: 50px;
-  padding: 300px 0 20px 100px;
-  color: #ffffff;
-}
-
-.main-home svg {
-  width: 1.2%;
-  fill: #ffffff;
-}
-.main-home p {
-  padding-left: 150px;
-}
-.main-home .link-main-home {
-  padding: 30px 0 0 140px;
+@media (max-width: 768px) {
+  .bg-home {
+    background-image: url(/assets/images/fond_home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100vw;
+    height: 100vh;
+  }
 }
 
 .container-form-style {
@@ -11903,5 +11956,14 @@ h1, .h1 {
   .container-form-style {
     padding: 50px;
     margin-top: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+  footer a {
+    font-size: 0.7rem;
   }
 }/*# sourceMappingURL=main.css.map */
