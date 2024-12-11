@@ -43,7 +43,7 @@ nav {
         padding: 300px 0 20px 100px;
     }
 
-    svg {
+    .icon-example {
         width: 4%;
         fill: $white;
     }
@@ -67,44 +67,47 @@ nav {
     @media (max-width : 768px) {
         h1 {
             font-size: 1.5rem;
-            padding: 100px 0 20px 20px;
-        }
-
-        svg {
-            width: 4%;
-            fill: $white;
+            padding: 75px 0 20px 20px;
         }
 
         p {
             font-size: 0.8rem;
             padding-left: 25px;
-
         }
 
-        picture {
-            img {
-                width: 5%;
+        .container-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+
+            svg {
+                width: 30px;
+                height: 30px;
+
+                .number-anim {
+                    transform: scale(1); /* ou ajuster selon les besoins */
+                }
             }
         }
+    }
 
-        .link-main-home {
-            padding: 100px 0 0px 20px;
-            display: flex;
-            flex-direction: column;
+    .link-main-home {
+        padding: 30px 0 0 0;
+        display: flex;
+        flex-direction: column;
 
-            a {
-                padding-bottom: 30px;
-            }
+        a {
+            padding-bottom: 30px;
+        }
 
-            button {
-                font-size: 0.9rem;
-            }
+        button {
+            font-size: 0.9rem;
+        }
 
-            .link-example {
-                padding-left: 0;
-                margin-left: 0;
-                text-align: center;
-            }
+        .link-example {
+            padding-left: 0;
+            margin-left: 0;
+            text-align: center;
         }
     }
 }

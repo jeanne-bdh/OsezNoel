@@ -11873,7 +11873,7 @@ nav .navbar-collapse {
   font-size: 50px;
   padding: 300px 0 20px 100px;
 }
-.main-home svg {
+.main-home .icon-example {
   width: 4%;
   fill: #ffffff;
 }
@@ -11893,35 +11893,40 @@ nav .navbar-collapse {
 @media (max-width: 768px) {
   .main-home h1, .main-home .h1 {
     font-size: 1.5rem;
-    padding: 100px 0 20px 20px;
-  }
-  .main-home svg {
-    width: 4%;
-    fill: #ffffff;
+    padding: 75px 0 20px 20px;
   }
   .main-home p {
     font-size: 0.8rem;
     padding-left: 25px;
   }
-  .main-home picture img {
-    width: 5%;
+  .main-home .container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
-  .main-home .link-main-home {
-    padding: 100px 0 0px 20px;
-    display: flex;
-    flex-direction: column;
+  .main-home .container-grid svg {
+    width: 30px;
+    height: 30px;
   }
-  .main-home .link-main-home a {
-    padding-bottom: 30px;
+  .main-home .container-grid svg .number-anim {
+    transform: scale(1); /* ou ajuster selon les besoins */
   }
-  .main-home .link-main-home button {
-    font-size: 0.9rem;
-  }
-  .main-home .link-main-home .link-example {
-    padding-left: 0;
-    margin-left: 0;
-    text-align: center;
-  }
+}
+.main-home .link-main-home {
+  padding: 30px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.main-home .link-main-home a {
+  padding-bottom: 30px;
+}
+.main-home .link-main-home button {
+  font-size: 0.9rem;
+}
+.main-home .link-main-home .link-example {
+  padding-left: 0;
+  margin-left: 0;
+  text-align: center;
 }
 
 .bg-home {
