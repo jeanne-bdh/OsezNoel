@@ -11909,7 +11909,8 @@ nav .navbar-collapse {
     height: 30px;
   }
   .main-home .container-grid svg .number-anim {
-    transform: scale(1); /* ou ajuster selon les besoins */
+    transform: scale(1);
+    /* ou ajuster selon les besoins */
   }
 }
 .main-home .link-main-home {
@@ -11982,7 +11983,7 @@ nav .navbar-collapse {
 }
 
 .bg-example {
-  background-image: url(/assets/images/fond_home.jpg);
+  background-image: url(/assets/images/fond_blue-X-flat-lay.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: calc(100vh - 90px);
@@ -11992,13 +11993,44 @@ nav .navbar-collapse {
 }
 @media (max-width: 768px) {
   .bg-example {
-    background-image: url(/assets/images/fond_home.jpg);
+    background-image: url(/assets/images/fond_blue-X-flat-lay.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     width: 100vw;
     height: 100vh;
   }
+}
+
+h2, .h2 {
+  font-family: "Great Vibes", sans-serif;
+  color: #0E3063;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container-numbers {
+  margin: 0 400px;
+}
+.container-numbers .col-num-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-numbers .num-box {
+  border: 1.5px solid #43291F;
+  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: rgba(14, 48, 99, 0.3);
+  font-family: "Great Vibes", sans-serif;
+  color: #ffffff;
+  font-size: 5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
