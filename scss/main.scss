@@ -80,6 +80,26 @@ nav {
             grid-template-columns: repeat(2, 1fr);
             justify-items: center;
 
+            .link-main-home {
+                padding: 30px 0 0 0;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding-bottom: 30px;
+                }
+
+                button {
+                    font-size: 0.9rem;
+                }
+
+                .link-example {
+                    padding-left: 0;
+                    margin-left: 0;
+                    text-align: center;
+                }
+            }
+
             svg {
                 width: 30px;
                 height: 30px;
@@ -89,26 +109,6 @@ nav {
                     /* ou ajuster selon les besoins */
                 }
             }
-        }
-    }
-
-    .link-main-home {
-        padding: 30px 0 0 0;
-        display: flex;
-        flex-direction: column;
-
-        a {
-            padding-bottom: 30px;
-        }
-
-        button {
-            font-size: 0.9rem;
-        }
-
-        .link-example {
-            padding-left: 0;
-            margin-left: 0;
-            text-align: center;
         }
     }
 }
@@ -229,4 +229,14 @@ footer {
             font-size: 0.7rem;
         }
     }
+}
+
+// TEST MEMORY - Retourner les cartes
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
 }
