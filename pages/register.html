@@ -5,25 +5,52 @@
         <form class="d-flex flex-column align-items-center">
             <div class="mb-3">
                 <label for="idInputReg" class="form-label text-black">Pseudo :</label>
-                <input type="text" class="form-control" id="idInputReg">
+                <input type="text" class="form-control" id="idInputReg" required>
+                <div class="invalid-feedback">
+                    Veuillez entrer un identifiant ayant entre 3 à 50 caractères
+                </div>
             </div>
             <div class="mb-3">
                 <label for="emailInputReg" class="form-label text-black">Email :</label>
-                <input type="email" class="form-control" id="emailInputReg">
+                <input type="email" class="form-control" id="emailInputReg" required>
+                <div class="invalid-feedback">
+                    Veuillez entrer une adresse e-mail valide
+                </div>
             </div>
             <div class="mb-3">
                 <label for="nomInputReg" class="form-label text-black">Nom :</label>
-                <input type="text" class="form-control" id="nomInputReg">
+                <input type="text" class="form-control" id="nomInputReg" required>
+                <div class="invalid-feedback">
+                    Le nom est invalide
+                </div>
             </div>
             <div class="mb-3">
                 <label for="prenomInputReg" class="form-label text-black">Prénom :</label>
-                <input type="text" class="form-control" id="prenomInputReg">
+                <input type="text" class="form-control" id="prenomInputReg" required>
+                <div class="invalid-feedback">
+                    Le prénom est invalide
+                </div>
             </div>
             <div class="mb-3">
                 <label for="pwdInputReg" class="form-label text-black">Mot de passe :</label>
-                <input type="password" class="form-control" id="pwdInputReg">
+                <input type="password" class="form-control" id="pwdInputReg" required>
+                <div class="invalid-feedback">
+                    Le mot de passe doit contenir au moins 8 caractères comprenant une lettre majuscule, une
+                    minuscule, un chiffre et un caractère
+                    spécial
+                </div>
             </div>
-            <button type="submit" class="btn btn-dark text-white">Se créer un compte</button>
+            <div class="mb-3">
+                <label for="validPwdInputReg" class="form-label text-black">Confirmez le mot de passe :</label>
+                <input type="password" class="form-control" id="validPwdInputReg" required>
+                <div class="invalid-feedback">
+                    La confirmation du mot de passe est incorrecte
+                </div>
+                <div class="valid-feedback">
+                    Le mot de passe est validé
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark text-white" id="btn-validReg">Se créer un compte</button>
         </form>
     </div>
 

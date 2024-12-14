@@ -21,7 +21,7 @@ function validateFormCo() {
 
 // Fonction valide l'identifant
 function validateIdCo(input) {
-    const idCoRegex = /^[a-zA-Z0-9._-]{3,20}$/;
+    const idCoRegex = /^[a-zA-Z0-9._-]{3,50}$/;
     const idCoUser = input.value;
     if (idCoUser.match(idCoRegex)) {
         input.classList.add("is-valid");

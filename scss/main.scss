@@ -190,6 +190,9 @@ h2 {
     color: $dark;
     font-size: 3rem;
     text-align: center;
+}
+
+.title-example {
     margin-top: 100px;
 }
 
@@ -239,4 +242,9 @@ footer {
     grid-gap: 10px;
     justify-content: center;
     margin: 30px auto;
+}
+
+// PAGE : Créer un calendrier
+#title-createCalendar {
+    font-family: $font-family-display;
 }

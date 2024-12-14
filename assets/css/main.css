@@ -11904,6 +11904,22 @@ nav .navbar-collapse {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
+  .main-home .container-grid .link-main-home {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-home .container-grid .link-main-home a {
+    padding-bottom: 30px;
+  }
+  .main-home .container-grid .link-main-home button {
+    font-size: 0.9rem;
+  }
+  .main-home .container-grid .link-main-home .link-example {
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
   .main-home .container-grid svg {
     width: 30px;
     height: 30px;
@@ -11912,22 +11928,6 @@ nav .navbar-collapse {
     transform: scale(1);
     /* ou ajuster selon les besoins */
   }
-}
-.main-home .link-main-home {
-  padding: 30px 0 0 0;
-  display: flex;
-  flex-direction: column;
-}
-.main-home .link-main-home a {
-  padding-bottom: 30px;
-}
-.main-home .link-main-home button {
-  font-size: 0.9rem;
-}
-.main-home .link-main-home .link-example {
-  padding-left: 0;
-  margin-left: 0;
-  text-align: center;
 }
 
 .bg-home {
@@ -12007,6 +12007,9 @@ h2, .h2 {
   color: #0E3063;
   font-size: 3rem;
   text-align: center;
+}
+
+.title-example {
   margin-top: 100px;
 }
 
@@ -12040,4 +12043,17 @@ h2, .h2 {
   footer a {
     font-size: 0.7rem;
   }
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+#title-createCalendar {
+  font-family: "Great Vibes", sans-serif;
 }/*# sourceMappingURL=main.css.map */
