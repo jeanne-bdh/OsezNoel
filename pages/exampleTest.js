@@ -8,18 +8,13 @@ function createNumBox() {
         numBox.classList.add('col-auto', 'num-box');
         numBox.textContent = i;
 
-        // Ecouteur d'évén pour déclencheur le retournement de la carte
-        numBox.addEventListener('click', onCardClick);
-
         calendarBoard.appendChild(numBox);
     }
 }
 
 createNumBox();
 
-// Fonction pour retourner une carte au click
-function onCardClick(e) {
-    const numBox = e.target.parentElement;
-    numBox.classList.add('flip');
-}
-
+document.getElementById('calendar-board').addEventListener('click', function () {
+    let myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+    myModal.show();
+});

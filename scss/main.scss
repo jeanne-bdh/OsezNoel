@@ -289,3 +289,11 @@ footer {
         }
     }
 }
+
+.modal-dialog {
+    max-width: calc(100% - 2rem); // Laisser une marge de 1rem (16px) sur les côtés
+    max-height: calc(100% - 2rem); // Idem pour le haut et le bas
+    width: 100%; // S'assurer que le modal occupe toute la largeur possible
+    height: auto; // Ajuster la hauteur automatiquement en fonction du contenu
+    margin: 1rem auto;
+}
