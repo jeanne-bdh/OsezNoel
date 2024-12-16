@@ -1,137 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
 @import 'custom';
+@import 'components';
+@import 'navbar';
+@import 'footer';
+@import 'home';
+@import 'form';
 
-body {
-    a {
-        color: $white;
-    }
-
-    p {
-        color: $white;
-    }
-}
-
-// NAVBAR
-nav {
-
-    img {
-        width: 4rem;
-    }
-
-    .navbar-brand {
-        font-family: $font-family-display;
-        font-size: 40px;
-    }
-
-    .nav-link {
-        color: $white;
-        white-space: nowrap;
-    }
-
-    .navbar-collapse {
-        display: flex;
-        justify-content: flex-end;
-        text-align: end;
-    }
-}
-
-// MAIN HOME
-.main-home {
-
-    h1 {
-        font-size: 50px;
-        padding: 300px 0 20px 100px;
-    }
-
-    .icon-example {
-        width: 4%;
-        fill: $white;
-    }
-
-    p {
-        padding-left: 150px;
-    }
-
-    .link-main-home {
-        padding: 30px 0 30px 140px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        .link-example {
-            padding-left: 3rem;
-            margin-left: 3rem;
-        }
-    }
-
-    @media (max-width : 768px) {
-        h1 {
-            font-size: 1.5rem;
-            padding: 75px 0 20px 20px;
-        }
-
-        p {
-            font-size: 0.8rem;
-            padding-left: 25px;
-        }
-
-        .container-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            justify-items: center;
-
-            .link-main-home {
-                padding: 30px 0 0 0;
-                display: flex;
-                flex-direction: column;
-
-                a {
-                    padding-bottom: 30px;
-                }
-
-                button {
-                    font-size: 0.9rem;
-                }
-
-                .link-example {
-                    padding-left: 0;
-                    margin-left: 0;
-                    text-align: center;
-                }
-            }
-
-            svg {
-                width: 30px;
-                height: 30px;
-
-                .number-anim {
-                    transform: scale(1);
-                    /* ou ajuster selon les besoins */
-                }
-            }
-        }
-    }
-}
-
-// BACKGROUND HOME
-.bg-home {
-    background-image: url(/assets/images/fond_home.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: calc(100vh - 90px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @media (max-width : 768px) {
-        background-image: url(/assets/images/fond_home.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left;
-        width: 100vw;
-        height: 100vh;
-    }
-}
 
 // LOGIN
 .container-form-style {
@@ -215,19 +90,6 @@ h2 {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-}
-
-// FOOTER
-footer {
-    @media (max-width: 768px) {
-        p {
-            font-size: 0.7rem;
-        }
-
-        a {
-            font-size: 0.7rem;
-        }
     }
 }
 

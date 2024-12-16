@@ -1,0 +1,132 @@
+// BACKGROUND HOME
+.bg-home {
+    background-image: url(/assets/images/home/bg-home-red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -550px center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width : 768px) {
+        background-position: center;
+        height: calc(100vh - 90px);
+    }
+}
+
+// MAIN HOME
+.main-home {
+
+    a,
+    button {
+        font-size: 0.9rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 0.9rem;
+        padding: 0 100px 0 20px;
+    }
+
+    h1 {
+        color: $white;
+        text-align: left;
+        font-size: 1.8rem;
+        padding: 40px 0 20px 20px;
+    }
+
+    .anim-home {
+        margin: 30px 140px 40px 20px;
+
+        .x-sock {
+            width: 70px;
+        }
+
+        .x-tree {
+            width: 60px;
+        }
+
+        .gingerbread {
+            width: 60px;
+        }
+
+        .santa-claus {
+            width: 70px;
+        }
+    }
+
+    .link-main-home {
+        text-align: left;
+        padding-left: 20px;
+
+        .link-example {
+            margin-top: 1.5rem;
+        }
+
+        .icon-arrow {
+            width: 15px;
+        }
+    }
+
+    @media (min-width : 768px) {
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 0 400px;
+        }
+
+        a,
+        button {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.125rem;
+            padding: 70px 400px 20px 400px;
+        }
+
+        .anim-home {
+            margin: 70px 0;
+
+            .x-sock {
+                width: 110px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .x-tree {
+                width: 100px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .gingerbread {
+                width: 100px;
+            }
+
+            .santa-claus {
+                width: 110px;
+            }
+        }
+
+        .link-main-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link-example {
+                padding-left: 3rem;
+                margin-left: 3rem;
+                margin-top: 0;
+            }
+
+            .icon-arrow {
+                width: 20px;
+                fill: $black;
+            }
+        }
+    }
+}

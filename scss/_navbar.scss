@@ -1,0 +1,22 @@
+nav {
+
+    img {
+        width: 4rem;
+    }
+
+    .navbar-brand {
+        font-family: $font-family-display;
+        font-size: 40px;
+    }
+
+    .nav-link {
+        color: $white;
+        white-space: nowrap;
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+    }
+}
