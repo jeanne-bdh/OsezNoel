@@ -10,6 +10,11 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (min-width: 576px) and (max-width: 768px) {
+        background-position: right;
+        height: calc(100vh - 90px);
+    }
+
     @media (min-width : 768px) {
         background-position: center;
         height: calc(100vh - 90px);
@@ -70,11 +75,66 @@
         }
     }
 
+    @media (min-width: 576px) and (max-width: 768px) {
+        p {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
+        a,
+        button {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 3.125rem;
+            padding: 70px 0 20px 20px;
+        }
+
+        .anim-home {
+            margin: 30px 240px 70px 20px;
+
+            .x-sock {
+                width: 110px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .x-tree {
+                width: 100px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .gingerbread {
+                width: 100px;
+            }
+
+            .santa-claus {
+                width: 110px;
+            }
+        }
+
+        .link-main-home {
+            text-align: left;
+            padding-left: 100px;
+
+            .link-example {
+                margin-top: 2.5rem;
+            }
+
+            .icon-arrow {
+                width: 20px;
+                fill: $black;
+            }
+        }
+    }
+
     @media (min-width : 768px) {
         p {
             text-align: center;
             font-size: 1.2rem;
-            padding: 0 400px;
         }
 
         a,
@@ -85,7 +145,7 @@
         h1 {
             text-align: center;
             font-size: 3.125rem;
-            padding: 70px 400px 20px 400px;
+            padding: 70px 0 20px 0;
         }
 
         .anim-home {

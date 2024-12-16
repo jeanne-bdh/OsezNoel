@@ -1,11 +1,19 @@
 footer {
-    @media (max-width: 768px) {
-        p {
-            font-size: 0.7rem;
-        }
+    p {
+        font-size: 0.7rem;
+    }
 
+    a {
+        font-size: 0.7rem;
+    }
+
+    @media (min-width: 576px) {
+        p {
+            font-size: 1rem;
+        }
+    
         a {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
     }
 }

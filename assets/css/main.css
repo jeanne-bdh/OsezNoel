@@ -11870,12 +11870,18 @@ nav .navbar-collapse {
   text-align: end;
 }
 
-@media (max-width: 768px) {
+footer p {
+  font-size: 0.7rem;
+}
+footer a {
+  font-size: 0.7rem;
+}
+@media (min-width: 576px) {
   footer p {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
   footer a {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 }
 
@@ -11889,6 +11895,12 @@ nav .navbar-collapse {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .bg-home {
+    background-position: right;
+    height: calc(100vh - 90px);
+  }
 }
 @media (min-width: 768px) {
   .bg-home {
@@ -11937,11 +11949,55 @@ nav .navbar-collapse {
 .main-home .link-main-home .icon-arrow {
   width: 15px;
 }
+@media (min-width: 576px) and (max-width: 768px) {
+  .main-home p {
+    text-align: left;
+    font-size: 1.2rem;
+  }
+  .main-home a,
+  .main-home button {
+    font-size: 1.1rem;
+  }
+  .main-home h1, .main-home .h1 {
+    text-align: left;
+    font-size: 3.125rem;
+    padding: 70px 0 20px 20px;
+  }
+  .main-home .anim-home {
+    margin: 30px 240px 70px 20px;
+  }
+  .main-home .anim-home .x-sock {
+    width: 110px;
+    display: block;
+    margin-left: auto;
+  }
+  .main-home .anim-home .x-tree {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+  }
+  .main-home .anim-home .gingerbread {
+    width: 100px;
+  }
+  .main-home .anim-home .santa-claus {
+    width: 110px;
+  }
+  .main-home .link-main-home {
+    text-align: left;
+    padding-left: 100px;
+  }
+  .main-home .link-main-home .link-example {
+    margin-top: 2.5rem;
+  }
+  .main-home .link-main-home .icon-arrow {
+    width: 20px;
+    fill: #43291F;
+  }
+}
 @media (min-width: 768px) {
   .main-home p {
     text-align: center;
     font-size: 1.2rem;
-    padding: 0 400px;
   }
   .main-home a,
   .main-home button {
@@ -11950,7 +12006,7 @@ nav .navbar-collapse {
   .main-home h1, .main-home .h1 {
     text-align: center;
     font-size: 3.125rem;
-    padding: 70px 400px 20px 400px;
+    padding: 70px 0 20px 0;
   }
   .main-home .anim-home {
     margin: 70px 0;
