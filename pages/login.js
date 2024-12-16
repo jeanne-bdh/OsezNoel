@@ -2,12 +2,12 @@ const inputIdCo = document.getElementById("idInputCo");
 const inputPasswordCo = document.getElementById("passwordInputCo");
 const btnValidCo = document.getElementById("btn-validCo");
 
-inputEmailCo.addEventListener("keyup", validateFormCo);
+inputIdCo.addEventListener("keyup", validateFormCo);
 inputPasswordCo.addEventListener("keyup", validateFormCo);
 
 // Fonction valide le formulaire
 function validateFormCo() {
-    const idCoOk = validateEmailCo(idInputCo);
+    const idCoOk = validateIdCo(inputIdCo);
     const passwordCoOk = validatePasswordCo(inputPasswordCo);
 
     // Pour que le bouton soit cliquable
@@ -19,11 +19,11 @@ function validateFormCo() {
     }
 }
 
-// Fonction valide l'email
-function validateEmailCo(input) {
-    const emailCoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const mailCoUser = input.value;
-    if (mailCoUser.match(emailCoRegex)) {
+// Fonction valide l'identifant
+function validateIdCo(input) {
+    const idCoRegex = /^[a-zA-Z0-9._-]{3,50}$/;
+    const idCoUser = input.value;
+    if (idCoUser.match(idCoRegex)) {
         input.classList.add("is-valid");
         input.classList.remove("is-invalid");
         return true;

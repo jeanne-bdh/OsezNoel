@@ -1,0 +1,15 @@
+// LOGIN
+.container-form-style {
+    background-color: #F7E7CE;
+    border-radius: 10px;
+    border: 1.5px solid $dark;
+    padding: 40px;
+    margin-top: 70px;
+    width: 80%;
+
+    @media (min-width: 768px) {
+        padding: 50px;
+        margin-top: 200px;
+        width: 30%;
+    }
+}
