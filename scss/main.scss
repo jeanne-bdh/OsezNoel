@@ -5,6 +5,7 @@
 @import 'navbar';
 @import 'footer';
 @import 'home';
+@import '404';
 @import 'form';
 
 
@@ -26,7 +27,7 @@
 
 // PAGE CALENDRIER EXEMPLE
 .bg-example {
-    background-image: url(/assets/images/fond_blue-X-flat-lay.jpg);
+    background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 90px);
@@ -35,7 +36,7 @@
     justify-content: space-between;
 
     @media (max-width : 768px) {
-        background-image: url(/assets/images/fond_blue-X-flat-lay.jpg);
+        background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: left;

@@ -8,7 +8,8 @@ body {
     }
 }
 
-.main-button:hover {
+.dark-button:hover {
     background-color: $white;
     border-color: $white;
+    color: $black;
 }
