@@ -66,6 +66,12 @@
         text-align: left;
         padding-left: 20px;
 
+        .btn-dark:hover {
+            background-color: $white;
+            border-color: $white;
+            color: $black;
+        }
+
         .link-example {
             margin-top: 1.5rem;
         }

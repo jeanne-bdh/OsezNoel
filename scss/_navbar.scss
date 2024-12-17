@@ -9,14 +9,14 @@ nav {
         font-size: 40px;
     }
 
-    .nav-link {
-        color: $white;
-        white-space: nowrap;
-    }
-
     .navbar-collapse {
         display: flex;
         justify-content: flex-end;
         text-align: end;
+
+        .btn-primary:hover {
+            background-color: $white;
+            border-color: $white;
+        }
     }
 }

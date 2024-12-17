@@ -11853,6 +11853,11 @@ body p {
   color: #ffffff;
 }
 
+.main-button:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
 nav img {
   width: 4rem;
 }
@@ -11860,14 +11865,14 @@ nav .navbar-brand {
   font-family: "Great Vibes", sans-serif;
   font-size: 40px;
 }
-nav .nav-link {
-  color: #ffffff;
-  white-space: nowrap;
-}
 nav .navbar-collapse {
   display: flex;
   justify-content: flex-end;
   text-align: end;
+}
+nav .navbar-collapse .btn-primary:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 footer p {
@@ -11942,6 +11947,11 @@ footer a {
 .main-home .link-main-home {
   text-align: left;
   padding-left: 20px;
+}
+.main-home .link-main-home .btn-dark:hover {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #43291F;
 }
 .main-home .link-main-home .link-example {
   margin-top: 1.5rem;
