@@ -11859,12 +11859,20 @@ body p {
   color: #43291F;
 }
 
-nav img {
-  width: 4rem;
-}
 nav .navbar-brand {
   font-family: "Great Vibes", sans-serif;
-  font-size: 40px;
+  font-size: 1.9rem;
+}
+nav .navbar-brand img {
+  width: 3rem;
+}
+@media (min-width: 768px) {
+  nav .navbar-brand {
+    font-size: 2.5rem;
+  }
+  nav .navbar-brand img {
+    width: 4rem;
+  }
 }
 nav .navbar-collapse {
   display: flex;
@@ -11897,7 +11905,7 @@ footer a {
   background-repeat: no-repeat;
   background-position: -550px center;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -11905,13 +11913,13 @@ footer a {
 @media (min-width: 576px) and (max-width: 768px) {
   .bg-home {
     background-position: right;
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
   }
 }
 @media (min-width: 768px) {
   .bg-home {
     background-position: center;
-    height: calc(100vh - 90px);
+    min-height: calc(100vh - 90px);
   }
 }
 
@@ -12082,45 +12090,52 @@ footer a {
   }
 }
 
-footer {
+#footer-404 {
   margin: 100px 0 1rem 0;
 }
 @media (min-width: 768px) {
-  footer {
+  #footer-404 {
     margin: 200px 0 1rem 0;
   }
 }
 
-.container-form-style {
-  background-color: #F7E7CE;
-  border-radius: 10px;
-  border: 1.5px solid #922121;
-  padding: 40px;
-  margin-top: 70px;
-  width: 80%;
+.bg-form {
+  background-image: url(/assets/images/home/bg-home-red.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-@media (min-width: 768px) {
-  .container-form-style {
-    padding: 50px;
-    margin-top: 200px;
-    width: 30%;
+@media (min-width: 992px) {
+  .bg-form {
+    background-position: center;
+    min-height: calc(100vh - 90px);
   }
 }
 
-.register-form-style {
-  background-color: #749ec1;
+.container-form-style {
   border-radius: 10px;
-  border: 1.5px solid #922121;
-  padding: 40px;
+  border: 1.5px solid #43291F;
+  padding: 30px 0 20px 0;
   margin-top: 20px;
-  width: 80%;
+  width: 300px;
+}
+.container-form-style a,
+.container-form-style button {
+  font-size: 0.9rem;
 }
 @media (min-width: 768px) {
-  .register-form-style {
-    padding: 50px;
-    margin-top: 40px;
-    width: 30%;
+  .container-form-style {
+    width: 500px;
   }
+}
+
+#form-login {
+  margin-top: 50px;
 }
 
 .bg-example {

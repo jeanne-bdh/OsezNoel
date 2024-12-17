@@ -1,25 +1,27 @@
-<section class="bg-home">
+<section class="bg-form">
 
-    <div class="container container-form-style">
-        <h4 class="text-black text-center mb-4">CONNEXION</h4>
-        <form class="d-flex flex-column align-items-center">
+    <div class="container-fluid container-form-style bg-secondary" id="form-login">
+        <h4 class="text-black text-center mb-3 fs-4">CONNEXION</h4>
+        <form class="px-5">
             <div class="mb-3">
-                <label for="idInputCo" class="form-label text-black">Identifiant :</label>
-                <input type="text" class="form-control" id="idInputCo">
+                <label for="idInputCo" class="form-label col-form-label-sm text-black">Identifiant :</label>
+                <input type="text" class="form-control form-control-sm" id="idInputCo" required>
             </div>
             <div class="mb-3">
-                <label for="idInputPassword" class="form-label text-black">Mot de passe :</label>
-                <input type="password" class="form-control" id="idInputPassword">
+                <label for="idInputPassword" class="form-label col-form-label-sm text-black">Mot de passe :</label>
+                <input type="password" class="form-control form-control-sm" id="idInputPassword" required>
             </div>
-            <button type="submit" class="btn btn-dark text-white">Se connecter</button>
+            <div class="text-center mt-4">
+            <button type="submit" class="btn btn-dark dark-button" id="btn-validCo">Se connecter</button>
+        </div>
         </form>
         <div class="text-center pt-3">
-            <a class="text-black" href="/register">Vous n’avez pas de compte ? Inscrivez-vous ici !</a>
+            <a class="text-black" href="/register">Vous n’avez pas de compte ? <br> Inscrivez-vous ici !</a>
         </div>
     </div>
 
-    <!-- FOOTER LOGIN (= HOME) -->
-    <footer class="container py-3">
+    <!-- FOOTER (= HOME) -->
+    <footer class="container my-3">
         <hr class="w-75 mx-auto text-white border-2 rounded-5">
         <p class="text-center">&copy; 2024 Osez Noël - Tous droits réservés - <a href="/legacy">Mentions légales</a>
         </p>

@@ -1,37 +1,68 @@
-<section class="bg-home">
+<section class="bg-form">
 
-    <div class="container register-form-style">
-        <h4 class="text-black text-center mb-4">S'INSCRIRE</h4>
-        <form class="d-flex flex-column align-items-center">
+    <div class="container-fluid container-form-style bg-secondary">
+        <h4 class="text-black text-center mb-3 fs-4">S'INSCRIRE</h4>
+        <form class="px-5">
             <div class="mb-3">
-                <label for="idInputReg" class="form-label text-black">Pseudo :</label>
-                <input type="text" class="form-control" id="idInputReg">
+                <label for="nomInputReg" class="form-label col-form-label-sm text-black">Nom :</label>
+                <input type="text" class="form-control form-control-sm" id="nomInputReg" required>
+                <div class="invalid-feedback">
+                    Le nom est invalide
+                </div>
             </div>
             <div class="mb-3">
-                <label for="emailInputReg" class="form-label text-black">Email :</label>
-                <input type="email" class="form-control" id="emailInputReg">
+                <label for="prenomInputReg" class="form-label col-form-label-sm text-black">Prénom :</label>
+                <input type="text" class="form-control form-control-sm" id="prenomInputReg" required>
+                <div class="invalid-feedback">
+                    Le prénom est invalide
+                </div>
             </div>
             <div class="mb-3">
-                <label for="nomInputReg" class="form-label text-black">Nom :</label>
-                <input type="text" class="form-control" id="nomInputReg">
+                <label for="idInputReg" class="form-label col-form-label-sm text-black">Pseudo :</label>
+                <input type="text" class="form-control form-control-sm" id="idInputReg" required>
+                <div class="invalid-feedback">
+                    Veuillez entrer un identifiant ayant entre 3 à 50 caractères
+                </div>
             </div>
             <div class="mb-3">
-                <label for="prenomInputReg" class="form-label text-black">Prénom :</label>
-                <input type="text" class="form-control" id="prenomInputReg">
+                <label for="emailInputReg" class="form-label col-form-label-sm text-black">Email :</label>
+                <input type="email" class="form-control form-control-sm" id="emailInputReg" required>
+                <div class="invalid-feedback">
+                    Veuillez entrer une adresse e-mail valide
+                </div>
             </div>
             <div class="mb-3">
-                <label for="pwdInputReg" class="form-label text-black">Mot de passe :</label>
-                <input type="password" class="form-control" id="pwdInputReg">
+                <label for="pwdInputReg" class="form-label col-form-label-sm text-black">Mot de passe :</label>
+                <input type="password" class="form-control form-control-sm" id="pwdInputReg" required>
+                <div class="invalid-feedback">
+                    Le mot de passe doit contenir au moins 8 caractères comprenant une lettre majuscule, une
+                    minuscule, un chiffre et un caractère
+                    spécial
+                </div>
             </div>
-            <button type="submit" class="btn btn-dark text-white">Se créer un compte</button>
+            <div class="mb-3">
+                <label for="validPwdInputReg" class="form-label col-form-label-sm text-black">Confirmez le mot de passe
+                    :</label>
+                <input type="password" class="form-control form-control-sm" id="validPwdInputReg" required>
+                <div class="invalid-feedback">
+                    La confirmation du mot de passe est incorrecte
+                </div>
+                <div class="valid-feedback">
+                    Le mot de passe est validé
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button type="submit" class="btn btn-dark dark-button" id="btn-validReg">Se créer un
+                    compte</button>
+            </div>
         </form>
-        <div class="text-center pt-3">
-            <a href="/login">Vous avez déjà un compte ? Connectez-vous ici !</a>
+        <div class="text-center mt-3">
+            <a class="text-black" href="/login">Vous avez déjà un compte ? <br> Connectez-vous ici !</a>
         </div>
     </div>
 
     <!-- FOOTER REGISTER (= HOME) -->
-    <footer class="container py-3">
+    <footer class="container my-3">
         <hr class="w-75 mx-auto text-white border-2 rounded-5">
         <p class="text-center">&copy; 2024 Osez Noël - Tous droits réservés - <a href="/legacy">Mentions légales</a>
         </p>

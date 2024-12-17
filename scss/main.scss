@@ -9,22 +9,6 @@
 @import 'form';
 
 
-// REGISTER
-.register-form-style {
-    background-color: #749ec1;
-    border-radius: 10px;
-    border: 1.5px solid $dark;
-    padding: 40px;
-    margin-top: 20px;
-    width: 80%;
-
-    @media (min-width: 768px) {
-        padding: 50px;
-        margin-top: 40px;
-        width: 30%;
-    }
-}
-
 // PAGE CALENDRIER EXEMPLE
 .bg-example {
     background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);

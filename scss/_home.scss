@@ -5,19 +5,19 @@
     background-repeat: no-repeat;
     background-position: -550px center;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     @media (min-width: 576px) and (max-width: 768px) {
         background-position: right;
-        height: calc(100vh - 90px);
+        min-height: calc(100vh - 90px);
     }
 
     @media (min-width : 768px) {
         background-position: center;
-        height: calc(100vh - 90px);
+        min-height: calc(100vh - 90px);
     }
 }
 

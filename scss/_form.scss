@@ -1,15 +1,45 @@
-// LOGIN
-.container-form-style {
-    background-color: #F7E7CE;
-    border-radius: 10px;
-    border: 1.5px solid $dark;
-    padding: 40px;
-    margin-top: 70px;
-    width: 80%;
+// Styles pour pages "register", "login", "formCalendar"
 
-    @media (min-width: 768px) {
-        padding: 50px;
-        margin-top: 200px;
-        width: 30%;
+// BACKGROUND FORM
+.bg-form {
+    background-image: url(/assets/images/home/bg-home-red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width : 992px) {
+        background-position: center;
+        min-height: calc(100vh - 90px);
     }
+}
+
+// CONTAINER BEIGE
+.container-form-style {
+    border-radius: 10px;
+    border: 1.5px solid $black;
+    padding: 30px 0 20px 0;
+    margin-top: 20px;
+    width: 300px;
+
+    a,
+    button {
+        font-size: 0.9rem;
+    }
+
+    @media (min-width : 768px) {
+        width: 500px;
+    }
+}
+
+
+// Styles spécifiques
+
+// LOGIN
+#form-login {
+    margin-top: 50px;
 }
