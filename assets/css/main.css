@@ -12134,8 +12134,39 @@ footer a {
   }
 }
 
-#form-login {
+#form-login, #form-calendar {
   margin-top: 50px;
+}
+
+.bg-example {
+  background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .bg-example {
+    background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+.bg-example h2, .bg-example .h2 {
+  font-family: "Great Vibes", sans-serif;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container-legal {
+  width: 800px;
+  background-color: #F7E7CE;
 }
 
 .bg-example {
