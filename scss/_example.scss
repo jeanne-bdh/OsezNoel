@@ -2,24 +2,56 @@
     background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: calc(100vh - 90px);
+    background-position: left;
+    width: 100vw;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    @media (max-width : 768px) {
-        background-image: url(/assets/images/bg-theme/bg-theme-example.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left;
-        width: 100vw;
-        height: 100vh;
+    @media (min-width : 768px) {
+        min-height: calc(100vh - 90px);
     }
 
     h2 {
         font-family: $font-family-display;
-        color: $white;
-        text-align: center;
-        margin-top: 100px;
+        font-size: 1.9rem;
+        margin: 30px 10px;
+
+        @media (min-width : 768px) {
+            margin-top: 150px;
+            font-size: 3rem;
+        }
+    }
+
+    .container-numbers {
+
+        .num-box {
+            border: 1.5px solid $black;
+            border-radius: 10px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba($dark, 0.6);
+            font-family: $font-family-display;
+            color: $white;
+            font-size: 5rem;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }
+
+
+/*
+// TEST MEMORY - Retourner les cartes
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 30px auto;
+}
+*/
