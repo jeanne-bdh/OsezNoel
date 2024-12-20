@@ -12143,7 +12143,7 @@ footer a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: left;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12156,13 +12156,41 @@ footer a {
 }
 .bg-example h2, .bg-example .h2 {
   font-family: "Great Vibes", sans-serif;
-  font-size: 1.9rem;
-  margin: 30px 10px;
+  font-size: 2.5rem;
+  margin: 30px 20px;
 }
 @media (min-width: 768px) {
   .bg-example h2, .bg-example .h2 {
-    margin-top: 150px;
+    margin: 150px 0 0 0;
     font-size: 3rem;
+  }
+}
+.bg-example .container-numbers {
+  padding: 0 3rem;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .bg-example .container-numbers {
+    padding: 0 130px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-example .container-numbers {
+    padding: 0 100px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .bg-example .container-numbers {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .bg-example .container-numbers {
+    padding: 0 250px;
+  }
+}
+@media (min-width: 1400px) {
+  .bg-example .container-numbers {
+    padding: 0 350px;
   }
 }
 .bg-example .container-numbers .num-box {
@@ -12179,18 +12207,28 @@ footer a {
   justify-content: center;
   align-items: center;
 }
-
-/*
-// TEST MEMORY - Retourner les cartes
-#game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
-    grid-gap: 10px;
-    justify-content: center;
-    margin: 30px auto;
+.bg-example .container-numbers .num-box:hover {
+  background-color: #922121;
 }
-*/
+
+@media (max-width: 768px) {
+  .modal {
+    min-height: 100vh;
+  }
+  .modal .modal-dialog {
+    max-width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .modal .modal-dialog .modal-content {
+    border: none;
+    border-radius: 0;
+    height: 100%;
+  }
+  .modal .modal-dialog .modal-content img {
+    width: 100%;
+  }
+}
 .container-legal {
   width: 800px;
   background-color: #F7E7CE;

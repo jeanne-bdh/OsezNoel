@@ -3,7 +3,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -15,16 +15,37 @@
 
     h2 {
         font-family: $font-family-display;
-        font-size: 1.9rem;
-        margin: 30px 10px;
+        font-size: 2.5rem;
+        margin: 30px 20px;
 
         @media (min-width : 768px) {
-            margin-top: 150px;
+            margin: 150px 0 0 0;
             font-size: 3rem;
         }
     }
 
     .container-numbers {
+        padding: 0 3rem;
+
+        @media (min-width : 576px)and (max-width: 768px) {
+            padding: 0 130px;
+        }
+
+        @media (min-width : 768px)and (max-width: 992px) {
+            padding: 0 100px;
+        }
+
+        @media (min-width : 992px)and (max-width: 1200px) {
+            padding: 0 150px;
+        }
+
+        @media (min-width : 1200px)and (max-width: 1400px) {
+            padding: 0 250px;
+        }
+
+        @media (min-width: 1400px) {
+            padding: 0 350px;
+        }
 
         .num-box {
             border: 1.5px solid $black;
@@ -39,19 +60,34 @@
             display: flex;
             justify-content: center;
             align-items: center;
+
+            &:hover {
+                background-color: $dark;
+            }
         }
     }
 }
 
+// MODAL
+@media (max-width: 768px) {
+    
+    .modal {
+        min-height: 100vh;
 
-/*
-// TEST MEMORY - Retourner les cartes
-#game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: repeat(4, 100px);
-    grid-gap: 10px;
-    justify-content: center;
-    margin: 30px auto;
+        .modal-dialog {
+            max-width: 100%;
+            height: 100%;
+            margin: 0;
+
+            .modal-content {
+                border: none;
+                border-radius: 0;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
-*/

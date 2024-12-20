@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendrier de l'Avent</title>
+  <link rel="stylesheet" href="teststyle.css">
+</head>
+<body>
+  <h1>Calendrier de l'Avent</h1>
+  <div class="calendar">
+    <!-- Génération des cases -->
+    <div class="day" data-day="1">1</div>
+    <div class="day" data-day="2">2</div>
+    <div class="day" data-day="3">3</div>
+    <!-- Ajoutez les jours jusqu'à 24 -->
+    <div class="day" data-day="24">24</div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="close-btn">&times;</span>
+      <img id="modal-image" src="" alt="Surprise!">
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="testjs.js"></script>
+</body>
+</html>
