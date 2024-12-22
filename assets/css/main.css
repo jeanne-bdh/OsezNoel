@@ -11930,7 +11930,6 @@ footer a {
 .main-home p {
   text-align: left;
   font-size: 0.9rem;
-  padding: 0 100px 0 20px;
 }
 .main-home h1, .main-home .h1 {
   color: #ffffff;
@@ -11941,17 +11940,73 @@ footer a {
 .main-home .anim-home {
   margin: 30px 140px 40px 20px;
 }
+@keyframes sock-animation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .main-home .anim-home .x-sock {
   width: 70px;
+  animation: sock-animation 1.5s infinite;
+}
+@keyframes tree-animation {
+  0% {
+    transform: rotate(0deg); /* Position initiale */
+  }
+  25% {
+    transform: rotate(-5deg); /* Inclinaison vers la gauche */
+  }
+  50% {
+    transform: rotate(5deg); /* Inclinaison vers la droite */
+  }
+  75% {
+    transform: rotate(-5deg); /* Retour vers la gauche */
+  }
+  100% {
+    transform: rotate(0deg); /* Retour à la position initiale */
+  }
 }
 .main-home .anim-home .x-tree {
   width: 60px;
+  animation: tree-animation 2s infinite;
+  transform-origin: center;
+}
+@keyframes gingerbread-animation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
 }
 .main-home .anim-home .gingerbread {
   width: 60px;
+  animation: gingerbread-animation 1s infinite;
+}
+@keyframes santa-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-7deg);
+  }
+  50% {
+    transform: rotate(7deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .main-home .anim-home .santa-claus {
   width: 70px;
+  animation: santa-animation 3s infinite;
+  transform-origin: center;
 }
 .main-home .link-main-home {
   text-align: left;
@@ -12057,44 +12112,47 @@ footer a {
   }
 }
 
-.main-404 {
+.section-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-404 .main-404 {
   height: 60vh;
   padding-top: 50px;
   position: relative;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .main-404 {
+  .section-404 .main-404 {
     text-align: left;
     padding-left: 50px;
   }
 }
-
-.renne-404 {
+.section-404 .renne-404 {
   position: absolute;
   z-index: 1;
   top: 67%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.renne-404 img {
+.section-404 .renne-404 img {
   width: 300px;
 }
 @media (min-width: 992px) {
-  .renne-404 {
+  .section-404 .renne-404 {
     top: 59%;
     left: 65%;
   }
-  .renne-404 img {
+  .section-404 .renne-404 img {
     width: 700px;
   }
 }
-
-#footer-404 {
+.section-404 #footer-404 {
   margin: 100px 0 1rem 0;
 }
 @media (min-width: 768px) {
-  #footer-404 {
+  .section-404 #footer-404 {
     margin: 200px 0 1rem 0;
   }
 }
