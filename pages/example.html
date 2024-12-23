@@ -1,0 +1,50 @@
+<section class="bg-example">
+    <h2 class="text-white text-center">Calendrier de l'Avent 2024 de Michel</h2>
+
+    <!-- 24 CASES-->
+    <div class="container-fluid container-numbers">
+        <div class="row gy-4" id="row-numbers">
+            <!-- Contenu inséré en Javascript -->
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jour 1</h5>
+                    <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img alt="Les surprises du calendrier" id="img-modal">
+                <div class="modal-body">
+                    <p class="text-black" id="text-modal"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PATIENCE -->
+    <div class="modal" id="modal-patience" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Patience !</h5>
+                    <button type="button" class="btn-close" id="btn-close-patience" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img src="/assets/images/calendar/img_trop-tot.png" alt="Patience il est trop tôt" id="img-modal-patience">
+                <div class="modal-body">
+                    <p class="text-black" id="text-modal-patience">Il est trop tôt ! Cette case n'est pas encore disponible</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="container py-3">
+        <hr class="w-75 mx-auto text-white border-2 rounded-5">
+        <p class="text-center text-white">&copy; 2024 Osez Noël - Tous droits réservés - <a class="text-white"
+                href="/legalinfos">Mentions légales</a>
+        </p>
+    </footer>
+</section>

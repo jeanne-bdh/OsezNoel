@@ -1,0 +1,251 @@
+// BACKGROUND HOME
+.bg-home {
+    background-image: url(/assets/images/home/bg-home-red.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -550px center;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        background-position: right;
+        min-height: calc(100vh - 90px);
+    }
+
+    @media (min-width : 768px) {
+        background-position: center;
+        min-height: calc(100vh - 90px);
+    }
+}
+
+// MAIN HOME
+.main-home {
+
+    a,
+    button {
+        font-size: 0.9rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        color: $white;
+        text-align: left;
+        font-size: 1.8rem;
+        padding: 40px 0 20px 20px;
+    }
+
+    .anim-home {
+        margin: 30px 140px 40px 20px;
+
+        @keyframes sock-animation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .x-sock {
+            width: 70px;
+            animation: sock-animation 1.5s infinite;
+        }
+
+        @keyframes tree-animation {
+            0% {
+                transform: rotate(0deg); /* Position initiale */
+            }
+            25% {
+                transform: rotate(-5deg); /* Inclinaison vers la gauche */
+            }
+            50% {
+                transform: rotate(5deg); /* Inclinaison vers la droite */
+            }
+            75% {
+                transform: rotate(-5deg); /* Retour vers la gauche */
+            }
+            100% {
+                transform: rotate(0deg); /* Retour à la position initiale */
+            }
+        }
+
+        .x-tree {
+            width: 60px;
+            animation: tree-animation 2s infinite;
+            transform-origin: center;
+        }
+
+        @keyframes gingerbread-animation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+
+        .gingerbread {
+            width: 60px;
+            animation: gingerbread-animation 1s infinite;
+        }
+
+        @keyframes santa-animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(-7deg);
+            }
+            50% {
+                transform: rotate(7deg);
+            }
+            75% {
+                transform: rotate(-10deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .santa-claus {
+            width: 70px;
+            animation: santa-animation 3s infinite;
+            transform-origin: center;
+        }
+    }
+
+    .link-main-home {
+        text-align: left;
+        padding-left: 20px;
+
+        .link-example {
+            margin-top: 1.5rem;
+        }
+
+        .icon-arrow {
+            width: 15px;
+        }
+    }
+
+    @media (min-width: 576px) and (max-width: 768px) {
+        p {
+            text-align: left;
+            font-size: 1.2rem;
+        }
+
+        a,
+        button {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 3.125rem;
+            padding: 70px 0 20px 20px;
+        }
+
+        .anim-home {
+            margin: 30px 240px 70px 20px;
+
+            .x-sock {
+                width: 110px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .x-tree {
+                width: 100px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .gingerbread {
+                width: 100px;
+            }
+
+            .santa-claus {
+                width: 110px;
+            }
+        }
+
+        .link-main-home {
+            text-align: left;
+            padding-left: 100px;
+
+            .link-example {
+                margin-top: 2.5rem;
+            }
+
+            .icon-arrow {
+                width: 20px;
+                fill: $black;
+            }
+        }
+    }
+
+    @media (min-width : 768px) {
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        a,
+        button {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.125rem;
+            padding: 70px 0 20px 0;
+        }
+
+        .anim-home {
+            margin: 70px 0;
+
+            .x-sock {
+                width: 110px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .x-tree {
+                width: 100px;
+                display: block;
+                margin-left: auto;
+            }
+
+            .gingerbread {
+                width: 100px;
+            }
+
+            .santa-claus {
+                width: 110px;
+            }
+        }
+
+        .link-main-home {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link-example {
+                padding-left: 3rem;
+                margin-left: 3rem;
+                margin-top: 0;
+            }
+
+            .icon-arrow {
+                width: 20px;
+                fill: $black;
+            }
+        }
+    }
+}

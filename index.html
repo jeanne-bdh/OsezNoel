@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <title>Osez Noël</title>
+</head>
+
+<body>
+
+    <header>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center me-5" href="/"><img src="/assets/images/home/logos/logo-bg-red.png"
+                        alt="logo arbre de Noel">Osez
+                    Noël</a>
+
+                <!-- Menu burger -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menu de navigation -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-nowrap" href="/">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-nowrap" href="/createCalendar">Créer un
+                                calendrier</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/register"><button type="button" class="btn btn-outline-light">S'inscrire</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/login"><button type="button" class="btn btn-primary text-nowrap text-black">Se
+                                    connecter</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-page">
+        <!-- Le contenu de ma page sera injecté ici -->
+    </main>
+
+    <script type="module" src="Router/Router.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
