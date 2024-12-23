@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     const rowNum = document.getElementById('row-numbers');
     const totalNumbers = 24;
 
+    // Charger les surprises
+    const surprises = await loadSurprises();
 
     // Boucle pour créer chaque élément
     for (let i = 1; i <= totalNumbers; i++) {
@@ -30,8 +32,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
-// Fonction pour afficher les surprises
-function displaySurpise(surprise) {
+// Pour afficher les surprises
+function displaySurprise(surprise) {
     const modal = document.getElementById("modal");
     const modalImage = document.getElementById("img-modal");
     const modalText = document.getElementById("text-modal");
@@ -43,6 +45,20 @@ function displaySurpise(surprise) {
     modal.style.display = "flex";
 }
 
+// Fonction pour charger le fichier JSON
+async function loadSurprises() {
+    try {
+        const response = await fetch('/pages/surprises.json');
+        if (!response.ok) {
+            throw new Error('Erreur lors du chargement des surprises');
+        }
+        const surprises = await response.json();
+        return surprises;
+    } catch (error) {
+        console.error('Erreur:', error);
+        return []; // Retourner un tableau vide en cas d'erreur
+    }
+}
 
 // Fermeture sur bouton
 const closeBtn = document.getElementById("btn-close");
@@ -57,11 +73,5 @@ window.addEventListener("click", (event) => {
     }
 });
 
-// Fonction pour charger le fichier JSON
-async function loadSurprises() {
-    const response = await fetch('/pages/surprises.json');
-    const surprises = await response.json();
-    return surprises;
-}
 
 // Gestion des erreurs à revoir
