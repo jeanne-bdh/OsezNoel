@@ -1,6 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
 @import 'custom';
+@import 'components';
+@import 'navbar';
+@import 'footer';
+@import 'home';
+@import '404';
+@import 'form';
+@import 'example';
+@import 'legal';
 
+<<<<<<< HEAD
 body {
     a {
         color: $white;
@@ -248,3 +258,5 @@ footer {
 #title-createCalendar {
     font-family: $font-family-display;
 }
+=======
+>>>>>>> develop

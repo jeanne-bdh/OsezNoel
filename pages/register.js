@@ -109,4 +109,8 @@ function validateRequired(input) {
         input.classList.add("is-invalid");
         return false;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> develop

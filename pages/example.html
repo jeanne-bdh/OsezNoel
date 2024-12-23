@@ -1,87 +1,50 @@
 <section class="bg-example">
     <h2 class="title-example">Calendrier de l'Avent 2024 de Michel</h2>
 
-    <div class="container-numbers">
-        <div class="row row-cols-lg-6 row-cols-sm-2 row-cols-md-4 g-5">
-            <div class="col-auto col-num-box">
-                <div class="num-box">1</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">2</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">3</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">4</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">5</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">6</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">7</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">8</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">9</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">10</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">11</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">12</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">13</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">14</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">15</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">16</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">17</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">18</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">19</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">20</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">21</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">22</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">23</div>
-            </div>
-            <div class="col col-num-box">
-                <div class="num-box">24</div>
+    <!-- 24 CASES-->
+    <div class="container-fluid container-numbers">
+        <div class="row gy-4" id="row-numbers">
+            <!-- Contenu inséré en Javascript -->
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Jour 1</h5>
+                    <button type="button" class="btn-close" id="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img alt="Les surprises du calendrier" id="img-modal">
+                <div class="modal-body">
+                    <p class="text-black" id="text-modal"></p>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- MODAL PATIENCE -->
+    <div class="modal" id="modal-patience" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Patience !</h5>
+                    <button type="button" class="btn-close" id="btn-close-patience" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <img src="/assets/images/calendar/img_trop-tot.png" alt="Patience il est trop tôt" id="img-modal-patience">
+                <div class="modal-body">
+                    <p class="text-black" id="text-modal-patience">Il est trop tôt ! Cette case n'est pas encore disponible</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
     <footer class="container py-3">
-        <hr class="w-75 mx-auto text-black border-2 rounded-5">
-        <p class="text-center text-black">&copy; 2024 Osez Noël - Tous droits réservés - <a class="text-black"
-                href="/legacy">Mentions légales</a>
+        <hr class="w-75 mx-auto text-white border-2 rounded-5">
+        <p class="text-center text-white">&copy; 2024 Osez Noël - Tous droits réservés - <a class="text-white"
+                href="/legalinfos">Mentions légales</a>
         </p>
     </footer>
 </section>
