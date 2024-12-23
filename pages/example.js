@@ -42,7 +42,7 @@ const surprises = {
     21: { image: "/assets/images/surprises/img-surprise-mug.png", text: "Surprise 21 : Ton mug de Nöel !" },
     22: { image: "/assets/images/surprises/img-surprise-mug.png", text: "Surprise 22 : Ton mug de Nöel !" },
     23: { image: "/assets/images/surprises/img-surprise-mug.png", text: "Surprise 23 : Ton mug de Nöel !" },
-    24: { image: "image24.jpg", text: "Surprise du jour 24 !" }
+    24: { image: "/assets/images/surprises/img-surprise-joyeux-noel.png", text: "Surprise du jour 24 !" }
 };
 
 // Les constantes
@@ -119,4 +119,3 @@ window.addEventListener("click", (event) => {
         modalPatience.style.display = "none";
     }
 });
-
