@@ -1,0 +1,39 @@
+<section class="bg-home">
+
+    <div class="container container-form-style">
+        <h4 class="text-black text-center mb-4 fs-1" id="title-createCalendar">Créer un nouveau calendrier</h4>
+        <form class="d-flex flex-column align-items-center">
+            <div class="mb-3">
+                <label for="nameInputCo" class="form-label text-black">Nom du calendrier :</label>
+                <input type="text" class="form-control" id="nameInputCo" placeholder="Donnez un nom à votre calendrier">
+            </div>
+
+            <!-- Durée : calendrier pour choisir les dates, 24 jours sinon msg d'erreur -->
+            <div class="mb-3">
+                <label for="dureeInputCo" class="form-label text-black">Durée :</label>
+                <input type="password" class="form-control" id="dureeInputCo" required>
+                <div class="invalid-feedback">
+                    La durée doit faire 24 jours
+                </div>
+            </div>
+
+            <!-- Choix du thème : modal avec modèles en petits -->
+            <div class="mb-3">
+                <label for="dureeInputCo" class="form-label text-black">Choix du thème :</label>
+                <input type="password" class="form-control" id="dureeInputCo" required>
+                <div class="invalid-feedback">
+                    Vous devrez choisir un thème
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-dark text-white" id="btn-validCo">Créer</button>
+        </form>
+    </div>
+
+    <footer class="container py-3">
+        <hr class="w-75 mx-auto text-white border-2 rounded-5">
+        <p class="text-center text-white">&copy; 2024 Osez Noël - Tous droits réservés - <a class="text-white"
+                href="/legacy">Mentions légales</a>
+        </p>
+    </footer>
+</section>

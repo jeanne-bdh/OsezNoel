@@ -1,4 +1,3 @@
-
 const inputIdReg = document.getElementById("idInputReg");
 const inputEmailReg = document.getElementById("emailInputReg");
 const inputNomReg = document.getElementById("nomInputReg");
@@ -110,4 +109,8 @@ function validateRequired(input) {
         input.classList.add("is-invalid");
         return false;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> develop
