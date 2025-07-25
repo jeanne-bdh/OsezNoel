@@ -1,14 +1,31 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello PageController!{% endblock %}
+{% block title %}Osez Noël !
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<section class="bg-home">
 
-<div class="example-wrapper">
-    <h1>Hello Osez Noel! ✅</h1>
-</div>
+		<div class="container-fluid main-home">
+			<h1>Bienvenue dans ton
+				<br>
+				Calendrier de l'Avant Anniversaire !</h1>
+			<p>Découvre chaque jour une surprise qui te
+				<br>
+				rapprochera un peu plus de moi 🎁🎉</p>
+
+			<a class="btn-gift" href="/example">
+				<button type="button" class="btn btn-dark py-2 px-4">J'accéde à mon cadeau</button>
+			</a>
+
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="container my-3">
+			<hr class="w-75 mx-auto text-white border-2 rounded-5">
+			<p class="text-center">&copy; 2025 Osez Noël - Tous droits réservés -
+				<a href="/legalinfos">Mentions légales</a>
+			</p>
+		</footer>
+	</section>
 {% endblock %}

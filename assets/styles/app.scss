@@ -4,3 +4,12 @@ $tertiary: #0E3063;
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
+
+// Custom styles
+@import 'base/typography';
+@import 'components/components';
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';

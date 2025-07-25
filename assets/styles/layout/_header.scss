@@ -1,0 +1,36 @@
+nav {
+    background-color: $tertiary;
+
+    .navbar-brand {
+        font-family: "Great Vibes", sans-serif;
+        font-size: 1.9rem;
+
+        img {
+            width: 50px;
+        }
+
+        @media (min-width : 768px) {
+            font-size: 2.5rem;
+
+            img {
+                width: auto;
+            }
+        }
+    }
+
+    .navbar-collapse {
+        display: flex;
+        justify-content: flex-end;
+        text-align: end;
+
+        .btn-primary {
+            background-color: $primary;
+            border-color: $primary;
+
+            &:hover {
+                background-color: $secondary;
+                border-color: $secondary;
+            }
+        }
+    }
+}
